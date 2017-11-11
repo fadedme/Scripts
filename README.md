@@ -1,2 +1,5 @@
-# Linux-command
-每日一条Linux命令
+# scripts
+
+shell scripts
+python scripts
+
