@@ -10,7 +10,7 @@
 #由于CentOS没有官方FFmpeg rpm软件包。但是，我们可以使用第三方YUM源（Nux Dextop）完成此工作。
 
 #for CentOS 7
-ffmpeg_Nux-Dextop_CentOS7(){
+ffmpeg_epel_CentOS7(){
 yum install -y epel-release 
 rpm --import /etc/pki/rpm-gpg/RPM-GPG-KEY-EPEL-7
 rpm --import http://li.nux.ro/download/nux/RPM-GPG-KEY-nux.ro
@@ -19,7 +19,7 @@ rpm -Uvh http://li.nux.ro/download/nux/dextop/el7/x86_64/nux-dextop-release-0-5.
 
 
 #for CentOS 6
-ffmpeg_Nux-Dextop_CentOS6(){
+ffmpeg_epel_CentOS6(){
 yum install -y epel-release 
 rpm --import /etc/pki/rpm-gpg/RPM-GPG-KEY-EPEL-6
 rpm --import http://li.nux.ro/download/nux/RPM-GPG-KEY-nux.ro
@@ -27,7 +27,7 @@ rpm -Uvh http://li.nux.ro/download/nux/dextop/el6/x86_64/nux-dextop-release-0-2.
 }
 
 #Choose yum 
-ffmpeg_epol_CentOS6
+ffmpeg_epel_CentOS6
 
 #install FFmpeg and FFmpeg-devel
 yum install ffmpeg ffmpeg-devel -y
