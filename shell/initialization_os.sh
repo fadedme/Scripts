@@ -11,12 +11,21 @@
 
 #######main
 
+CentOS7_epel() {
+echo -e "CentOS7_epel"
+wget -O /etc/yum.repos.d/epel.repo http://mirrors.aliyun.com/repo/epel-7.repo
+}
+
+CentOS6_epel() {
+echo -e "CentOS7_epel"
+wget -O /etc/yum.repos.d/epel.repo http://mirrors.aliyun.com/repo/epel-6.repo
+}
+
 #install tools
-install_tools()
-{
+install_tools() {
 echo -e "\033[32m \037Begin install tools,please waiting........\033[0m"
 
-sudo yum install -y setuptool vim wget ntp ftp telnet openssh-clients make dstat ncurses-devel gcc gcc-c++ make libtool lrzsz tmux>/dev/null 2>&1
+yum install -y setuptool tree vim wget ntp ftp telnet openssh-clients make dstat ncurses-devel gcc gcc-c++ make libtool lrzsz tmux>/dev/null 2>&1
 if [ $? -eq 0 ];then
 	echo -e "\033[32m \037The tools install finshed...\033[0m"
 fi
@@ -309,6 +318,7 @@ EOF
 
 echo -e "\e[32m----------------Begin  system initialization ---------------\e[0m"
 echo
+CentOS6_epel
 install_tools
 selinux
 Time
