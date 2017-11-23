@@ -2,9 +2,9 @@
 
 <p><img width="200" src="http://images.cnblogs.com/cnblogs_com/syaving/1044273/o_python.jpg"></p>
 
-<h1>Python & Shell</h1>
+<h1>Python</h1>
 
-<p><strong>Python & Shell</strong></p>
+<p><strong>Python</strong></p>
 
 <p><sub>Made with :sparkling_heart: by <a href="https://github.com/syavingc">syavingc</a></sub></p>
 
